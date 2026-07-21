@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>-0-</title>
+<link rel="icon" href="/favicon.ico">
+<link href="https://fonts.bunny.net/css?family=lexend:400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="brand">-0-</div>
+    <div id="tabbar"></div>
+    <div class="addtab-wrap">
+      <button id="addTabBtn">+ tab</button>
+      <div id="typeMenu" class="hidden">
+        <button data-type="latex">latex</button>
+        <button data-type="markdown">markdown</button>
+        <button data-type="text">text</button>
+        <button data-type="html">html</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <aside id="guide"></aside>
+
+    <section id="editorPane">
+      <textarea id="editor" spellcheck="false"></textarea>
+    </section>
+
+    <section id="previewPane">
+      <div id="actions"></div>
+      <div id="previewWrap">
+        <div id="preview"></div>
+      </div>
+      <div id="status"></div>
+    </section>
+  </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
